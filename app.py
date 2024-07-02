@@ -124,7 +124,7 @@ if 'task_index' not in st.session_state:
     "What is the Bellman equation?",
     "Describe the exploration-exploitation tradeoff in reinforcement learning.",
     "What are some common activation functions used in neural networks?",
-    "Explain the concept of a loss function in machine learning.",
+    "Explain the concept of a loss function in machine learning. Types of loss",
     "What is the purpose of the softmax function?",
     "Describe the difference between logistic regression and linear regression.",
     "What is the F1 score, and how is it calculated?"
