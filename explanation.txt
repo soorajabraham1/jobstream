@@ -1,0 +1,76 @@
+use hash map to instantly check for difference value, map will add index of last occurrence of a num, don’t use same element twice
+find local min and search for local max, sliding window
+hashset to get unique values in array, to check for duplicates easily
+make two passes, first in-order, second in-reverse, to compute products
+pattern: prev subarray cant be negative, dynamic programming: compute max sum for each prefix
+dp: compute max and max-abs-val for each prefix subarr;
+check if half of array is sorted in order to find pivot, arr is guaranteed to be in at most two sorted subarrays
+at most two sorted halfs, mid will be apart of left sorted or right sorted, if target is in range of sorted portion then search it, otherwise search other half
+sort input, for each first element, find next two where -a = b+c, if a=prevA, skip a, if b=prevB skip b to elim duplicates; to find b,c use two pointers, left/right on remaining list;
+shrinking window, left/right initially at endpoints, shift the pointer with min height;
+add bit by bit, be mindful of carry, after adding, if carry is still 1, then add it as well;
+modulo, and dividing n; mod and div are expensive, to divide use bit shift, instead of mod to get 1's place use bitwise & 1;
+write out result for num=16 to figure out pattern; res[i] = res[i - offset], where offset is the biggest power of 2 <= I;
+compute expected sum - real sum; xor n with each index and value;
+reverse each of 32 bits;
+subproblem find (n-1) and (n-2), sum = n;
+top-down: recursive dfs, for amount, branch for each coin, cache to store prev coin_count for each amount; bottom-up: compute coins for amount = 1, up until n, using for each coin (amount - coin), cache prev values
+recursive: foreach num, get subseq with num and without num, only include num if prev was less, cache solution of each; dp=subseq length which must end with each num, curr num must be after a prev dp or by itself;
+recursive: if first chars are equal find lcs of remaining of each, else max of: lcs of first and remain of 2nd and lcs of 2nd remain of first, cache result; nested forloop to compute the cache without recursion;
+for each prefix, if prefix is in dict and wordbreak(remaining str)=True, then return True, cache result of wordbreak;
+visualize the decision tree, base case is curSum = or > target, each candidate can have children of itself or elements to right of it inorder to elim duplicate solutions;
+for each num, get max of prev subarr, or num + prev subarr not including last element, store results of prev, and prev not including last element
+subarr = arr without first & last, get max of subarr, then pick which of first/last should be added to it
+can cur char be decoded in one or two ways? Recursion -> cache -> iterative dp solution, a lot of edge cases to determine, 52, 31, 29, 10, 20 only decoded one way, 11, 26 decoded two ways
+work backwards from solution, store paths for each position in grid, to further optimize, we don’t store whole grid, only need to store prev row;
+visualize the recursive tree, cache solution for O(n) time/mem complexity, iterative is O(1) mem, just iterate backwards to see if element can reach goal node, if yes, then set it equal to goal node, continue;
+recursive dfs, hashmap for visited nodes
+build adjacentcy_list with edges, run dfs on each V, if while dfs on V we see V again, then loop exists, otherwise V isnt in a loop, 3 states= not visited, visited, still visiting
+dfs each cell, keep track of visited, and track which reach pac, atl; dfs on cells adjacent to pac, atl, find overlap of cells that are visited by both pac and atl cells;
+foreach cell, if cell is 1 and unvisited run dfs, increment cound and marking each contigous 1 as visited
+use bruteforce and try to optimize, consider the max subseq containing each num; add each num to hashset, for each num if num-1 doesn’t exist, count the consecutive nums after num, ie num+1; there is also a union-find solution;
+chars of a word not in order, the words are in order, find adjacency list of each unique char by iterating through adjacent words and finding first chars that are different, run topsort on graph and do loop detection;
+union find, if union return false, loop exists, at end size must equal n, or its not connected; dfs to get size and check for loop, since each edge is double, before dfs on neighbor of N, remove N from neighbor list of neighbor;
+dfs on each node that hasn’t been visited, increment component count, adjacency list; bfs and union find are possible;
+insert new interval in order, then merge intervals; newinterval could only merge with one interval that comes before it, then add remaining intervals;
+sort each interval, overlapping intervals should be adjacent, iterate and build solution; also graph method, less efficient, more complicated
+instead of removing, count how max num of intervals you can include, sort intervals, dp to compute max intervals up until the i-th interval;
+sort intervals by start time, if second interval doesn’t overlap with first, then third def wont overlap with first;
+we care about the points in time where we are starting/ending a meeting, we already are given those, just separate start/end and traverse counting num of meetings going at these points in time; for each meeting check if a prev meeting has finished before curr started, using min heap;
+iterate through maintaining cur and prev; recursively reverse, return new head of list
+dict to remember visited nodes; two pointers at different speeds, if they meet there is loop
+insert each node from one list into the other
+divied and conquer, merge lists, N totalnodes, k-lists, O(N*logk). For each list, find min val, insert it into list, use priorityQ to optimize finding min O(N*logk)
+use dummy node at head of list, compute len of list; two pointers, second has offset of n from first;
+reverse second half of list, then easily reorder it; non-optimal way is to store list in array;
+use sets to keep track of all rows, cols to zero out, after, for each num if it is in a zero row or col then change it to 0; flag first cell in row, and col to mark row/col that needs to be zeroed;
+keep track of visited cells; keep track of boundaries, layer-by-layer;
+rotate layer-by-layer, use that it's a square as advantage, rotate positions in reverse order, store a in temp, a = b, b = c, c = d, d = temp;
+dfs on each cell, for each search remember visited cells, and remove cur visited cell right before you return from dfs;
+sliding window, if we see same char twice within curr window, shift start position;
+PAY ATTENTION: limited to chars A-Z; for each capital char, check if it could create the longest repeating substr, use sliding window to optimize; check if windowlen=1 works, if yes, increment len, if not, shift window right;
+need is num of unique char in T, HAVE is num of char we have valid count for, sliding window, move right until valid, if valid, increment left until invalid, to check validity keep track if the count of each unique char is satisfied;
+hashmap to count each char in str1, decrement for str2;
+for each of 26 chars, use count of each char in each word as tuple for key in dict, value is the list of anagrams;
+push opening brace on stack, pop if matching close brace, at end if stack empty, return true;
+left, right pointers, update left and right until each points at alphanum, compare left and right, continue until left >= right, don’t distinguish between upper/lowercase;
+foreach char in str, consider it were the middle, consider if pali was odd or even;
+same as longest palindromic string, each char in str as middle and expand outwards, do same for pali of even len; maybe read up on manachers alg
+store length of str before each string and delimiter like '#';
+recursive dfs to find max-depth of subtrees; iterative bfs to count number of levels in tree
+recursive dfs on both trees at the same time; iterative bfs compare each level of both trees
+recursive dfs to invert subtrees; bfs to invert levels, use collections.deque; iterative dfs is easy with stack if doing pre-order traversal
+helper returns maxpathsum without splitting branches, inside helper we also update maxSum by computing maxpathsum WITH a split;
+iterative bfs, add prev level which doesn't have any nulls to the result;
+bfs every single non-null node is added to string, and it's children are added too, even if they're null, deserialize by adding each non-null node to queue, deque node, it's children are next two nodes in string;
+traverse s to check if any subtree in s equals t; merkle hashing?
+first element in pre-order is root, elements left of root in in-order are left subtree, right of root are right subtree, recursively build subtrees;
+trick is use built in python min/max values float("inf"), "-inf", as parameters; iterative in-order traversal, check each val is greater than prev;
+non-optimal store tree in sorted array; iterative dfs in-order and return the kth element processed, go left until null, pop, go right once;
+compare p, q values to curr node, base case: one is in left, other in right subtree, then curr is lca;
+node has children characters, and bool if its an ending character, node DOESN’T have or need char, since root node doesn’t have a char, only children;
+if char = "." run search for remaining portion of word on all of curr nodes children;
+trick: I though use trie to store the grid, reverse thinking, instead store dictionary words, dfs on each cell, check if cell's char exists as child of root node in trie, if it does, update currNode, and check neighbors, a word could exist multiple times in grid, so don’t add duplicates;
+we always want the min of the current frontier, we can store frontier in heap of size k for efficient pop/push; divide and conquer merging lists;
+minheap that’s kept at size k, if its bigger than k pop the min, by the end it should be left with k largest;
+maintain curr median, and all num greater than med in a minHeap, and all num less than med in a maxHeap, after every insertion update median depending on odd/even num of elements;

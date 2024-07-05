@@ -1,0 +1,50 @@
+What is the difference between supervised and unsupervised learning?
+Explain the bias-variance tradeoff.
+What is a confusion matrix, and why is it useful?
+Describe the process of cross-validation.
+How do you handle missing data in a dataset?
+What is the purpose of regularization in machine learning models?
+Explain the concept of overfitting and underfitting.
+What is the difference between L1 and L2 regularization?
+Describe the k-nearest neighbors (KNN) algorithm.
+What is the purpose of a ROC curve?
+Explain the difference between precision and recall.
+What is a support vector machine (SVM)?
+Describe the Naive Bayes classifier and its assumptions.
+What is a decision tree, and how does it work?
+Explain the concept of ensemble learning.
+What is the difference between bagging and boosting?
+Describe the random forest algorithm.
+What is gradient boosting?
+Explain the k-means clustering algorithm.
+What is hierarchical clustering?
+Describe the principle of dimensionality reduction.
+What is principal component analysis (PCA)?
+Explain the t-SNE algorithm.
+What is the curse of dimensionality?
+Describe the difference between generative and discriminative models.
+What is a neural network?
+Explain the concept of backpropagation in neural networks.
+What is a convolutional neural network (CNN)?
+Describe the architecture of a recurrent neural network (RNN).
+What is long short-term memory (LSTM)?
+Explain the concept of an autoencoder.
+What is a generative adversarial network (GAN)?
+Describe the use of transfer learning in deep learning.
+What is the difference between a hyperparameter and a parameter?
+Explain the purpose of a learning rate in training neural networks.
+What is dropout, and how does it help in training neural networks?
+Describe the difference between batch gradient descent and stochastic gradient descent.
+What are word embeddings, and why are they useful?
+Explain the concept of attention mechanisms in neural networks.
+What is reinforcement learning?
+Describe the Q-learning algorithm.
+What is a Markov decision process (MDP)?
+Explain the concept of a policy in reinforcement learning.
+What is the Bellman equation?
+Describe the exploration-exploitation tradeoff in reinforcement learning.
+What are some common activation functions used in neural networks?
+Explain the concept of a loss function in machine learning.
+What is the purpose of the softmax function?
+Describe the difference between logistic regression and linear regression.
+What is the F1 score, and how is it calculated?
