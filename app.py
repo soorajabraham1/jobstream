@@ -3,15 +3,15 @@ import random
 
 
 blind75 = []
-with open('app/blind75.txt', 'r') as file:
+with open('blind75.txt', 'r') as file:
     blind75 = [line.strip() for line in file.readlines()]
 
 questions = []
-with open('app/questions.txt', 'r') as file:
+with open('questions.txt', 'r') as file:
     questions = [line.strip() for line in file.readlines()]
 
 companies = []
-with open('app/companies.txt', 'r') as file:
+with open('companies.txt', 'r') as file:
     companies = [line.strip() for line in file.readlines()]
 # Initialize the task list and task index in session state
 if 'task_index' not in st.session_state:
