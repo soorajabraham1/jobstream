@@ -1,50 +1,50 @@
-What is the difference between supervised and unsupervised learning?
-Explain the bias-variance tradeoff.
-What is a confusion matrix, and why is it useful?
-Describe the process of cross-validation.
-How do you handle missing data in a dataset?
-What is the purpose of regularization in machine learning models?
-Explain the concept of overfitting and underfitting.
-What is the difference between L1 and L2 regularization?
-Describe the k-nearest neighbors (KNN) algorithm.
-What is the purpose of a ROC curve?
-Explain the difference between precision and recall.
-What is a support vector machine (SVM)?
-Describe the Naive Bayes classifier and its assumptions.
-What is a decision tree, and how does it work?
-Explain the concept of ensemble learning.
-What is the difference between bagging and boosting?
-Describe the random forest algorithm.
-What is gradient boosting?
-Explain the k-means clustering algorithm.
-What is hierarchical clustering?
-Describe the principle of dimensionality reduction.
-What is principal component analysis (PCA)?
-Explain the t-SNE algorithm.
-What is the curse of dimensionality?
-Describe the difference between generative and discriminative models.
-What is a neural network?
-Explain the concept of backpropagation in neural networks.
-What is a convolutional neural network (CNN)?
-Describe the architecture of a recurrent neural network (RNN).
-What is long short-term memory (LSTM)?
-Explain the concept of an autoencoder.
-What is a generative adversarial network (GAN)?
-Describe the use of transfer learning in deep learning.
-What is the difference between a hyperparameter and a parameter?
-Explain the purpose of a learning rate in training neural networks.
-What is dropout, and how does it help in training neural networks?
-Describe the difference between batch gradient descent and stochastic gradient descent.
-What are word embeddings, and why are they useful?
+What is the difference between supervised, unsupervised, and semi-supervised learning?
+Explain the concept of overfitting in deep learning. How can it be prevented?
+What is backpropagation and how does it work?
+What are activation functions in neural networks? Name a few and explain their characteristics.
+Describe the structure of a convolutional neural network (CNN).
+What is the purpose of pooling layers in CNNs?
+Explain the term "vanishing gradient" problem. How does it affect training in deep networks?
+What is transfer learning in the context of deep learning?
+How can you reduce the number of parameters in a neural network?
+What is batch normalization and why is it used?
+What are some popular optimization algorithms used in training neural networks?
+Describe the concept of dropout regularization.
+What is the difference between a perceptron and a neural network?
+What is the role of the loss function in a neural network?
+Explain the concept of a generative adversarial network (GAN).
+What is object detection? Name some popular algorithms used for object detection.
+Describe the IoU (Intersection over Union) metric. Where is it used?
+What are some common challenges in deploying deep learning models in real-world applications?
+How can you handle class imbalance in a classification problem?
+What are the steps involved in preprocessing data for a computer vision task?
+Explain the concept of data augmentation and its importance in computer vision.
+What is mean normalization and why is it used in image processing?
+What are some popular datasets used in computer vision research?
+Describe the concept of semantic segmentation.
+What are the advantages and disadvantages of using CNNs over traditional computer vision techniques?
+Explain the concept of image registration.
+How can you evaluate the performance of a classification model?
+What is the difference between precision and recall?
+What are some techniques to handle overfitting in CNNs specifically?
+Describe the structure of a recurrent neural network (RNN).
+What are LSTM networks and why are they used in sequence modeling?
 Explain the concept of attention mechanisms in neural networks.
-What is reinforcement learning?
-Describe the Q-learning algorithm.
-What is a Markov decision process (MDP)?
-Explain the concept of a policy in reinforcement learning.
-What is the Bellman equation?
-Describe the exploration-exploitation tradeoff in reinforcement learning.
-What are some common activation functions used in neural networks?
-Explain the concept of a loss function in machine learning.
-What is the purpose of the softmax function?
-Describe the difference between logistic regression and linear regression.
-What is the F1 score, and how is it calculated?
+What is the difference between a feedforward neural network and a recurrent neural network?
+How do you deal with sequence prediction tasks using neural networks?
+What is the role of word embeddings in natural language processing tasks?
+Explain the concept of word2vec.
+How can you perform sentiment analysis using deep learning techniques?
+Describe the architecture of a Transformer model. What advantages does it offer?
+What are some challenges specific to training deep learning models on limited computational resources?
+Explain the concept of adversarial attacks on deep learning models.
+How can you interpret the decisions made by a deep learning model?
+What are some ethical considerations when deploying deep learning models in sensitive domains?
+Describe the concept of autoencoders and their applications.
+How do you handle missing data in a dataset before training a deep learning model?
+Explain the concept of feature extraction in the context of deep learning.
+What are some advantages of using GPUs for training deep learning models?
+Describe the role of hyperparameters in tuning a neural network.
+How do you choose an appropriate activation function for a neural network?
+Explain the concept of reinforcement learning and its applications.
+What are some recent advancements in deep learning that have significantly impacted the field of computer vision?
