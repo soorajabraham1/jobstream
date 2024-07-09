@@ -33,7 +33,7 @@ st.write('Click the button to display the next task in order.')
 current_task = st.session_state.tasks[st.session_state.task_index]
 
 if current_task == 'random_word':
-    current_task = random.choice(st.session_state.blind75) 
+    current_task = random.choice(st.session_state.words) 
     
 if current_task == 'interview':
     current_task = random.choice(st.session_state.questions) 
