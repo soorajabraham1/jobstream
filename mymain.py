@@ -1,6 +1,4 @@
 import streamlit as st
-import tkinter as tk
-from tkinter import ttk
 from openai import OpenAI
 from docx import Document
 import docxtpl
