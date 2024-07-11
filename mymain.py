@@ -260,7 +260,7 @@ if cv and cover is not None:
             st.download_button(
                 label="Download Cover Letter",
                 data=buffer1,
-                file_name="cover_letter.docx",
+                file_name="Sooraj_Cover_letter.docx",
                 mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
             )
 
@@ -270,6 +270,6 @@ if cv and cover is not None:
             st.download_button(
                 label="Download CV",
                 data=buffer2,
-                file_name="cv.docx",
+                file_name="Sooraj_CV.docx",
                 mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
             )
