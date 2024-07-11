@@ -24,7 +24,7 @@ def options(file_location):
                 myOptions[subOptions].append(line.strip("- "))  # Add color
     return myOptions
 # Load options
-myOptions = options(r"textfiles\choices.txt")
+myOptions = options(r"choices.txt")
 def myopenai(query):
     client = OpenAI(api_key=api_key)
     completion = client.chat.completions.create(
@@ -34,7 +34,7 @@ def myopenai(query):
     return completion.choices[0].message.content
 
 def generate(path, job_role, query,job_language):
-    file_path = r'textfiles\rag\resume.txt'
+    file_path = r'resume.txt'
     # Open the file in read mode
     with open(file_path, 'r') as file:
         # Read the contents of the file
