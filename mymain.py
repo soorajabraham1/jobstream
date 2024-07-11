@@ -210,7 +210,7 @@ def generate_letter(company_name, company_location, country, application_type, j
                    'summary_sentence_german': summary_sentence})
 
 # Streamlit app
-st.title("Job Description Parser and Word Generator")
+st.title("Word Generator")
 api_key = st.text_area("Password")
 cv = st.file_uploader("Upload CV", type="docx")
 cover = st.file_uploader("Upload Cover Letter", type="docx")
