@@ -1,6 +1,6 @@
 streamlit
 python-docx
-faiss==1.8.0
+faiss-cpu
 numpy
 datetime
 docxtpl
